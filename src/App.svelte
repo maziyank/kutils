@@ -4,6 +4,7 @@
   import HTMLTagRemover from "./HTMLTagRemover.svelte";
   import JoinLines from "./JoinLines.svelte";
   import Home from "./Home.svelte";
+  import NotFound from "./NotFound.svelte";
   export let url = "";
 </script>
 
@@ -101,18 +102,19 @@
                   <Link to="/JoinLines">Join Lines</Link>
                 </li>
                 <li class="menu-item">
-                  <a href="#">Placeholder Text</a>
+                  <Link to="/LoremIpsum">Lorem Ipsum Generator</Link>
                 </li>
                 <li class="menu-item">
-                  <a href="#">Bag of Words</a>
+                  <Link to="/BOW">Bag of Words</Link>
                 </li>
                 <li class="menu-item">
-                  <a href="#">Differ</a>
+                  <Link to="/Differ">Differ Text</Link>
                 </li>
 
               </ul>
             </div>
           </div>
+
           <div class="accordion">
             <input
               id="accordion-number"
@@ -126,22 +128,69 @@
             <div class="accordion-body">
               <ul class="menu menu-nav">
                 <li class="menu-item">
-                  <a href="#">Numeral System Formatter</a>
+                  <Link to="/Numeral">Numeral System Formatter</Link>
                 </li>
                 <li class="menu-item">
-                  <a href="#">Currency Formatter</a>
+                  <Link to="/Currency">Currency Formatter</Link>
                 </li>
                 <li class="menu-item">
-                  <a href="#">Random Number</a>
+                  <Link to="/RandomNumber">Random Number</Link>
                 </li>
                 <li class="menu-item">
-                  <a href="#">Indonesian Terbilang</a>
+                  <Link to="/Calculator">Simple Calculator</Link>
                 </li>
                 <li class="menu-item">
-                  <a href="#">Simple Calculator</a>
+                  <Link to="/OrderedList">Ordered List</Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accordion">
+            <input
+              id="accordion-number"
+              type="checkbox"
+              name="accordion-checkbox"
+              hidden
+              checked />
+            <label class="accordion-header c-hand" for="accordion-number">
+              CRYPTHOGRAPHY
+            </label>
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                <li class="menu-item">
+                  <Link to="/MD5">MD5 Encrypt</Link>
                 </li>
                 <li class="menu-item">
-                  <a href="#">Ordered List</a>
+                  <Link to="/SHA256">SHA256 Encrypt</Link>
+                </li>
+                <li class="menu-item">
+                  <Link to="/Base64">Base64 Encrypt</Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accordion">
+            <input
+              id="accordion-number"
+              type="checkbox"
+              name="accordion-checkbox"
+              hidden
+              checked />
+            <label class="accordion-header c-hand" for="accordion-number">
+              FOR INDONESIANS
+              <img
+                src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/whatsapp/238/flag-for-indonesia_1f1ee-1f1e9.png"
+                height="16px" />
+            </label>
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                <li class="menu-item">
+                  <Link to="/Terbilang">Terbilang</Link>
+                </li>
+                <li class="menu-item">
+                  <Link to="/Terbilang">Lokal Ipsum</Link>
                 </li>
               </ul>
             </div>
@@ -166,6 +215,7 @@
         <Route path="/JoinLines" component={JoinLines}>
           <ConvertCase />
         </Route>
+        <Route component={NotFound} />
       </div>
 
     </div>
