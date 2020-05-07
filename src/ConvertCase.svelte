@@ -42,7 +42,7 @@
 <div class="container">
   <h1>Convert Case</h1>
   <p>
-    Just enter or paste your text and choose the case you want to convert it to.
+    Just type or paste your text and choose the case you want to convert it to.
   </p>
   <div class="columns">
     <div class="column col-12">
