@@ -2,6 +2,7 @@
   import { Router, Link, Route } from "svelte-routing";
   import ConvertCase from "./ConvertCase.svelte";
   import HTMLTagRemover from "./HTMLTagRemover.svelte";
+  import JoinLines from "./JoinLines.svelte";
   import Home from "./Home.svelte";
   export let url = "";
 </script>
@@ -97,7 +98,7 @@
                   <Link to="/HTMLTagRemover">HTML Tag Remover</Link>
                 </li>
                 <li class="menu-item">
-                  <a href="#">Join Lines</a>
+                  <Link to="/JoinLines">Join Lines</Link>
                 </li>
                 <li class="menu-item">
                   <a href="#">Placeholder Text</a>
@@ -160,6 +161,9 @@
           <ConvertCase />
         </Route>
         <Route path="/HTMLTagRemover" component={HTMLTagRemover}>
+          <ConvertCase />
+        </Route>
+        <Route path="/JoinLines" component={JoinLines}>
           <ConvertCase />
         </Route>
       </div>
