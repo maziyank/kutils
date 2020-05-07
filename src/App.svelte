@@ -175,12 +175,12 @@
 
           <div class="accordion">
             <input
-              id="accordion-number"
+              id="accordion-crypt"
               type="checkbox"
               name="accordion-checkbox"
               hidden
               checked />
-            <label class="accordion-header c-hand" for="accordion-number">
+            <label class="accordion-header c-hand" for="accordion-crypt">
               CRYPTHOGRAPHY
             </label>
             <div class="accordion-body">
@@ -200,12 +200,11 @@
 
           <div class="accordion">
             <input
-              id="accordion-number"
+              id="accordion-ina"
               type="checkbox"
               name="accordion-checkbox"
-              hidden
-              checked />
-            <label class="accordion-header c-hand" for="accordion-number">
+              hidden/>
+            <label class="accordion-header c-hand" for="accordion-ina">
               FOR INDONESIANS
               <img
                 src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/whatsapp/238/flag-for-indonesia_1f1ee-1f1e9.png"
