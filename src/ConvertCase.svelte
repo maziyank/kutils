@@ -27,7 +27,7 @@
 
     const func = funcs[type];
 
-    text = func && typeof func === "function" ? func(text) : text;
+    text = func && typeof func === "function" ? func(reservedText) : reservedText;
   };
 
   const copyClipboard = event => {
