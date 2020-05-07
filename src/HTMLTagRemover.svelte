@@ -18,7 +18,7 @@
 <div class="container">
   <h1>HTML Tag Remover</h1>
   <p>
-    Just type or paste your HTML Soure here and then make it clean by clicking <b>Remove HTML Tag Button.</b>
+    Just type or paste your HTML source here and then make it clean by clicking <b>Remove HTML Tag Button.</b>
   </p>
   <div class="columns">
     <div class="column col-12">
