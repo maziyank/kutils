@@ -5,6 +5,8 @@
   import JoinLines from "./JoinLines.svelte";
   import Home from "./Home.svelte";
   import NotFound from "./NotFound.svelte";
+  import About from "./About.svelte";
+  
   export let url = "";
 </script>
 
@@ -58,6 +60,14 @@
   .content {
     padding: 1rem;
   }
+
+  .navbar {
+    height: 3.8rem;
+    position: fixed;
+    right: 40px;
+    top: 20px;
+    z-index: 100;
+  }
 </style>
 
 <Router {url}>
@@ -67,13 +77,30 @@
       <i class="icon icon-menu" />
     </a>
 
+    <div class="navbar">
+      <a class="off-canvas-toggle btn btn-link btn-action" href="#sidebar">
+        <i class="icon icon-menu" />
+      </a>
+      <div class="btns d-flex">
+        <a
+          class="btn ml-1"
+          href="/About">
+          About
+        </a>
+        <a
+          class="btn ml-1"
+          href="https://github.com/maziyank/kutils"
+          target="_blank">
+          GitHub
+        </a>
+      </div>
+    </div>
+
     <div id="sidebar-id" class="off-canvas-sidebar sidebar">
       <div id="sidebar">
         <div class="brand">
           <a class="logo" href="../index.html">
-            <img
-              src="https://picturepan2.github.io/spectre/img/spectre-logo.svg"
-              alt="Spectre.css CSS Framework" />
+            <figure class="avatar avatar-md" data-initial="!K" style="background-color: #5755d9;"></figure>
             <h2>KUTILS</h2>
             <small class="label label-secondary text-bold">BE GOOD</small>
           </a>
@@ -213,6 +240,9 @@
           <ConvertCase />
         </Route>
         <Route path="/JoinLines" component={JoinLines}>
+          <ConvertCase />
+        </Route>
+        <Route path="/About" component={About}>
           <ConvertCase />
         </Route>
         <Route component={NotFound} />
