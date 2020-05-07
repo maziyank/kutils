@@ -1,6 +1,6 @@
 # What is Kutils?
 
-K - Collection of small but productive utility in one place. This app hosted in https://the-kutils.web.app/
+K - Collection of small but productive utilities in one place. This app hosted in https://the-kutils.web.app/
 
 # Main Library
 - svelte
