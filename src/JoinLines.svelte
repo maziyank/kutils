@@ -3,7 +3,7 @@
 
   let text = "";
   const joinLines = () => {
-    text = text.replace(/(\r\n|\n|\r)/gm, "");
+    text = text.replace(/(\r\n|\n|\r)/gm, " ");
   };
 
   const copyClipboard = event => {
